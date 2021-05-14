@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eeeeee;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.header p {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.item-a {
+  grid-area: header;  
+}
+
+.item-b {
+    grid-area: main;  
+}
+
+.item-c {
+    grid-area: sidebar;  
+}
+
+.item-d {
+    grid-area: footer;  
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+
+}
