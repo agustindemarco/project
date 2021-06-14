@@ -1,0 +1,43 @@
+body {
+  font-size: 16px;
+  background-color: bisque;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container .search {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .search .texto {
+  padding: 15px;
+  width: 300px;
+}
+.container .search button {
+  margin: 10px;
+  padding: 15px;
+  background-color: aqua;
+}
+.container .search .sugerencias {
+  width: 100%;
+  list-style: none;
+}
